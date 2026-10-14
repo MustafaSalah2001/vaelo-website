@@ -1,0 +1,243 @@
+@import "tailwindcss";
+
+/*
+  VAELO design tokens. Re-theme for another brand by changing this block only.
+  stone → page (also the WebGL clear colour), ink → text, graphite → secondary text,
+  seam → hairlines and image placeholders, cobalt → the single accent (thread colour).
+*/
+@theme {
+  --color-stone: #e8e6e1;
+  --color-ink: #17171a;
+  --color-graphite: #5c5a55;
+  --color-seam: #cfcbc3;
+  --color-cobalt: #2b3fe0;
+  --color-danger: #a1281f;
+
+  --font-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --font-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --ease-cloth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-stone);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-stone);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-cobalt);
+    color: var(--color-stone);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-cobalt);
+    outline-offset: 3px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  /* Type scale: perfect fourth (1.333). Bodoni only for display sizes, where its contrast reads. */
+  .t-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-size: clamp(2.9rem, 8.4vw, 7.4rem);
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+  .t-h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 5.6vw, 4.7rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+  .t-h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(1.9rem, 3.4vw, 3rem);
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+  .t-h3 {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.35;
+    letter-spacing: -0.005em;
+  }
+  .t-lead {
+    font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+    line-height: 1.55;
+    max-width: 36em;
+  }
+  .t-body {
+    color: var(--color-graphite);
+    max-width: 62ch;
+  }
+  .t-small {
+    font-size: 0.875rem;
+    color: var(--color-graphite);
+  }
+  .t-price {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+  }
+
+  .shell {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+  @media (min-width: 768px) {
+    .shell {
+      padding-inline: 40px;
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 48px;
+    padding: 0 1.5rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 200ms, color 200ms, border-color 200ms;
+  }
+  .btn-primary {
+    background: var(--color-ink);
+    color: var(--color-stone);
+  }
+  .btn-primary:hover {
+    background: var(--color-cobalt);
+  }
+  .btn-quiet {
+    border: 1px solid var(--color-ink);
+    color: var(--color-ink);
+  }
+  .btn-quiet:hover {
+    background: var(--color-ink);
+    color: var(--color-stone);
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* A thread-like underline that draws itself. */
+  .link-thread {
+    background-image: linear-gradient(var(--color-cobalt), var(--color-cobalt));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 380ms var(--ease-cloth);
+  }
+  .link-thread:hover,
+  .link-thread:focus-visible {
+    background-size: 100% 1px;
+  }
+
+  .field {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.7rem 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-seam);
+    border-radius: 0;
+    color: var(--color-ink);
+    font: inherit;
+    transition: border-color 150ms;
+  }
+  .field::placeholder {
+    color: #8f8c86;
+  }
+  .field:focus {
+    outline: none;
+    border-bottom-color: var(--color-cobalt);
+  }
+  .field[aria-invalid="true"] {
+    border-bottom-color: var(--color-danger);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 40px;
+    padding: 0 1rem;
+    border: 1px solid var(--color-seam);
+    font-size: 0.875rem;
+    transition: border-color 150ms, background-color 150ms, color 150ms;
+  }
+  .chip:hover {
+    border-color: var(--color-ink);
+  }
+  .chip[aria-pressed="true"] {
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+    color: var(--color-stone);
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 16px;
+    top: -60px;
+    z-index: 100;
+    padding: 0.6rem 1rem;
+    background: var(--color-ink);
+    color: var(--color-stone);
+    font-weight: 600;
+  }
+  .skip-link:focus {
+    top: 12px;
+  }
+}
+
+@keyframes thread-run {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(300%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

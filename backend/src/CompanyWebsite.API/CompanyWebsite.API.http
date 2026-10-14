@@ -1,0 +1,26 @@
+@api = http://localhost:5090
+
+GET {{api}}/api/company
+
+###
+GET {{api}}/api/products?category=knitwear&sort=price-asc
+
+###
+GET {{api}}/api/products/halden-wool-overcoat
+
+###
+GET {{api}}/api/lookbooks/north-light-aw26
+
+###
+POST {{api}}/api/requests
+Content-Type: application/json
+
+{
+  "type": "Reservation",
+  "name": "Test Person",
+  "email": "test@example.com",
+  "productSlug": "halden-wool-overcoat",
+  "color": "Camel",
+  "size": "M",
+  "details": "Please hold this for a fitting on Saturday."
+}

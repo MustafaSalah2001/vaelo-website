@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyWebsite.Domain\CompanyWebsite.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Needed for IQueryable async operators used by the services. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.*" />
+  </ItemGroup>
+</Project>

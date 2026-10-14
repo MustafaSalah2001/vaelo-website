@@ -1,0 +1,457 @@
+{
+  "_notice": "DEMO CONTENT. VAELO Atelier is a fictional clothing brand created for a portfolio project. Names, prices, figures and stories are invented. Photos are real Unsplash photos (Unsplash License) hot-linked from images.unsplash.com; they show garments that are not made by any brand called VAELO. Keep frontend/src/content/demo-content.json in sync with `npm run sync:demo`.",
+  "company": {
+    "name": "VAELO Atelier",
+    "tagline": "Slow-made clothing from one small atelier",
+    "headline": "Clothes made slowly, to be worn for years.",
+    "introduction": "VAELO cuts and sews coats, knitwear, shirts and denim in one studio, in runs of a few hundred. We buy cloth from six mills we have visited, finish the seams that take strain by hand, and repair anything we have made, for free, for as long as you own it.",
+    "story": "VAELO started in 2014 in a rented corner of a shirt factory: two pattern cutters, one overlocker and a rail of coats nobody had ordered. The coats sold, slowly, to people who came back years later asking for a repair instead of a replacement. That request shaped everything since. We design each piece to be mended, keep every pattern on file, and still cut the first run of every style ourselves.",
+    "mission": "Make fewer clothes, better, and keep them in use: through honest cloth, construction that can be repaired, and a repair service that never expires.",
+    "vision": "A wardrobe where the oldest piece is also the favourite one.",
+    "values": [
+      "Cut once, mend forever",
+      "Know the mill behind every metre",
+      "Price the true cost, not the trend",
+      "Make the inside as well as the outside"
+    ],
+    "foundedYear": 2014,
+    "email": "atelier@vaelo.example",
+    "phone": "+1 555 0197",
+    "addressLine": "Atelier 3, Weavers' Yard",
+    "city": "Example City",
+    "country": "Demo Country",
+    "metrics": [
+      { "label": "Pieces made in 2025", "value": "4,800", "suffix": null },
+      { "label": "Mills we buy cloth from", "value": "6", "suffix": null },
+      { "label": "Free repairs in 2025", "value": "1,150", "suffix": null },
+      { "label": "Years each piece is designed to last", "value": "10", "suffix": "+" }
+    ],
+    "milestones": [
+      { "year": 2014, "title": "A corner of a shirt factory", "description": "Two pattern cutters and one overlocker make the first run of forty wool coats." },
+      { "year": 2016, "title": "The repair promise", "description": "Every VAELO piece gets free repairs for life. The first year brings in 90 coats." },
+      { "year": 2018, "title": "Our own atelier", "description": "We move into Weavers' Yard and start cutting knitwear and shirts in-house." },
+      { "year": 2021, "title": "Six mills, all visited", "description": "We now buy every metre of cloth from six mills we have walked through ourselves." },
+      { "year": 2024, "title": "Made-to-measure", "description": "Any coat, blazer or shirt can be cut to your measurements from the same patterns." },
+      { "year": 2026, "title": "The denim capsule", "description": "Selvedge jeans and a chore jacket, sewn on restored chain-stitch machines." }
+    ]
+  },
+  "settings": {
+    "seo.defaultTitle": "VAELO Atelier: slow-made clothing",
+    "seo.defaultDescription": "Coats, knitwear, shirts and denim cut and sewn in one small atelier, with free repairs for life. (Fictional brand: portfolio demo.)",
+    "seo.siteUrl": "https://vaelo.example",
+    "site.demoNotice": "VAELO Atelier is a fictional brand. This site is a portfolio project; prices and stories are demo data, and the photos are from Unsplash.",
+    "site.photoCredit": "Photography: Unsplash contributors, used under the Unsplash License.",
+    "site.aboutImage1": "https://images.unsplash.com/photo-1787505136265-9a99dad3bbac",
+    "site.aboutImage1Alt": "A woman cutting white fabric on a table in a sewing studio",
+    "site.aboutImage2": "https://images.unsplash.com/photo-1787505136296-1e8f0750e5ff",
+    "site.aboutImage2Alt": "A dressmaker adjusting a white dress on a mannequin in a dim studio",
+    "site.aboutImage3": "https://images.unsplash.com/photo-1705970268658-6f4d289099af",
+    "site.aboutImage3Alt": "A rack of spools of thread in many colours",
+    "site.storeImage": "https://images.unsplash.com/photo-1787288038828-74b0cb305413",
+    "site.storeImageAlt": "Clothing displayed on a wooden table inside a shop that looks out to sea"
+  },
+  "categories": [
+    { "name": "Outerwear", "slug": "outerwear", "description": "Wool coats cut to last a decade of winters." },
+    { "name": "Knitwear", "slug": "knitwear", "description": "Merino and wool jumpers, knitted to shape rather than cut." },
+    { "name": "Shirts", "slug": "shirts", "description": "Linen and cotton shirts with hand-finished collars." },
+    { "name": "Jersey", "slug": "jersey", "description": "Heavy cotton tees and loopback sweats." },
+    { "name": "Denim", "slug": "denim", "description": "Selvedge jeans and jackets on chain-stitch machines." },
+    { "name": "Tailoring", "slug": "tailoring", "description": "Soft blazers and trousers, also made-to-measure." }
+  ],
+  "products": [
+    {
+      "slug": "halden-wool-overcoat",
+      "name": "Halden Wool Overcoat",
+      "styleCode": "VA-OC01",
+      "categorySlug": "outerwear",
+      "price": 540,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": true,
+      "summary": "A single-breasted overcoat in dense brushed wool, cut long and easy over knitwear.",
+      "description": "Halden is the coat VAELO began with, recut every few years and never replaced. The cloth is a 680 g brushed wool that sheds rain and holds its shape; the canvas is half-floating so the chest moulds to you over a winter. Seams are taped and the lining is stitched in, not glued, so every part can be replaced when it wears.",
+      "colors": [ { "name": "Camel", "hex": "#B08A62" }, { "name": "Charcoal", "hex": "#3E3F42" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543", "alt": "A woman wearing a camel single-breasted coat in front of a grey brick wall", "color": "Camel" },
+        { "url": "https://images.unsplash.com/photo-1550872199-63f4382fe925", "alt": "A woman in a camel coat standing with her hands in the pockets", "color": "Camel" },
+        { "url": "https://images.unsplash.com/photo-1619603364937-8d7af41ef206", "alt": "A man standing in a long brown wool coat", "color": "Camel" },
+        { "url": "https://images.unsplash.com/photo-1739301722226-b60b59c3590a", "alt": "A woman in a grey coat and sunglasses", "color": "Charcoal" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "90% wool, 10% cashmere", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "680", "unit": "g/m" },
+        { "group": "Cloth", "label": "Lining", "value": "Cupro, stitched in", "unit": null },
+        { "group": "Fit", "label": "Length (size M)", "value": "108", "unit": "cm" },
+        { "group": "Fit", "label": "Fit", "value": "Easy, sized for a jumper underneath", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Brush after wear, dry clean once a season", "unit": null }
+      ],
+      "features": [
+        { "title": "Half-floating canvas", "description": "The chest canvas is stitched, not fused, so the coat softens to your shape instead of bubbling." },
+        { "title": "Built to be mended", "description": "Taped seams and a stitched-in lining mean cuffs, pockets and lining can all be replaced." }
+      ]
+    },
+    {
+      "slug": "sorrel-merino-crewneck",
+      "name": "Sorrel Merino Crewneck",
+      "styleCode": "VA-KN02",
+      "categorySlug": "knitwear",
+      "price": 185,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": false,
+      "summary": "A fine-gauge merino crewneck, fully fashioned so every seam sits flat.",
+      "description": "Sorrel is knitted to shape on fully-fashioned machines, so the panels are linked rather than cut and overlocked. That keeps the seams flat and stops the hem and cuffs from twisting after washing. The yarn is a non-mulesed extra-fine merino, spun tight enough to resist pilling.",
+      "colors": [ { "name": "Heather grey", "hex": "#9A9897" }, { "name": "Oat", "hex": "#D8CDB8" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f", "alt": "A person wearing a grey knit sweater", "color": "Heather grey" },
+        { "url": "https://images.unsplash.com/photo-1631541909061-71e349d1f203", "alt": "A knit sweater hanging on a hook in a room", "color": null },
+        { "url": "https://images.unsplash.com/photo-1646270968802-6bad28659329", "alt": "A stack of folded sweaters", "color": null }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% extra-fine merino", "unit": null },
+        { "group": "Cloth", "label": "Gauge", "value": "14", "unit": "gg" },
+        { "group": "Fit", "label": "Fit", "value": "Regular, true to size", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Hand wash cold, dry flat", "unit": null }
+      ],
+      "features": [
+        { "title": "Fully fashioned", "description": "Panels are knitted to shape and linked stitch by stitch, with no cut edges." },
+        { "title": "Pilling-resistant spin", "description": "A tighter twist in the yarn keeps the surface clean for years, not weeks." }
+      ]
+    },
+    {
+      "slug": "ivory-cable-jumper",
+      "name": "Ivory Cable Jumper",
+      "styleCode": "VA-KN05",
+      "categorySlug": "knitwear",
+      "price": 240,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": true,
+      "summary": "A heavy cable-knit jumper in undyed wool, warm enough to wear as a jacket.",
+      "description": "The cable panel runs from shoulder to hem without a break, which takes a slower knitting programme and twice the yarn of a plain jumper. The wool is left undyed, so the ivory is the colour of the fleece itself. It is the warmest thing we make that is not a coat.",
+      "colors": [ { "name": "Ivory", "hex": "#EEE9DD" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1588271968087-4c51abe05afc", "alt": "A woman wearing a white cable-knit sweater", "color": "Ivory" },
+        { "url": "https://images.unsplash.com/photo-1744135994721-495cf9e87ede", "alt": "A white sweater hanging on a gold hanger", "color": "Ivory" },
+        { "url": "https://images.unsplash.com/photo-1595026525047-dfa997df8a4a", "alt": "Close-up of white knit stitches", "color": null }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% undyed wool", "unit": null },
+        { "group": "Cloth", "label": "Gauge", "value": "5", "unit": "gg" },
+        { "group": "Fit", "label": "Fit", "value": "Relaxed, dropped shoulder", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Hand wash cold, dry flat", "unit": null }
+      ],
+      "features": [
+        { "title": "Unbroken cables", "description": "The cable runs the full length of the body, knitted in one programme." },
+        { "title": "Undyed wool", "description": "No dye bath: the ivory is the natural colour of the fleece." }
+      ]
+    },
+    {
+      "slug": "tide-linen-shirt",
+      "name": "Tide Linen Shirt",
+      "styleCode": "VA-SH03",
+      "categorySlug": "shirts",
+      "price": 130,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": false,
+      "summary": "A garment-washed linen shirt with a soft collar, made for heat.",
+      "description": "Tide is cut from a mid-weight European linen and washed after sewing, so it arrives soft and will not shrink again. The collar is unlined and hand-turned, the side seams are flat-felled, and the buttons are corozo nut. It looks better creased.",
+      "colors": [ { "name": "Tide blue", "hex": "#6E8FB5" }, { "name": "Salt", "hex": "#F2F0EA" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL", "XXL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1740711152088-88a009e877bb", "alt": "A blue linen shirt hanging on a white wall", "color": "Tide blue" },
+        { "url": "https://images.unsplash.com/photo-1713881842156-3d9ef36418cc", "alt": "A blue shirt drying on a clothes line", "color": "Tide blue" },
+        { "url": "https://images.unsplash.com/photo-1582261484646-a545de6d2382", "alt": "A man wearing a blue button-up shirt", "color": "Tide blue" },
+        { "url": "https://images.unsplash.com/photo-1713881587420-113c1c43e28a", "alt": "A white linen shirt hanging on a clothes line", "color": "Salt" },
+        { "url": "https://images.unsplash.com/photo-1591357037205-166318b51afd", "alt": "A man in a white button-up shirt outdoors", "color": "Salt" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% linen", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "165", "unit": "g/m²" },
+        { "group": "Fit", "label": "Fit", "value": "Relaxed, slightly boxy", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Machine wash 30°C, line dry", "unit": null }
+      ],
+      "features": [
+        { "title": "Washed after sewing", "description": "All the shrinkage happens before it reaches you, and the linen arrives soft." },
+        { "title": "Flat-felled seams", "description": "Every raw edge is folded inside, so the shirt is as neat inside as out." }
+      ]
+    },
+    {
+      "slug": "field-denim-jacket",
+      "name": "Field Denim Jacket",
+      "styleCode": "VA-DN01",
+      "categorySlug": "denim",
+      "price": 210,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": true,
+      "summary": "A chain-stitched denim jacket in 13 oz selvedge, rinsed once.",
+      "description": "Field is sewn on restored chain-stitch machines, which roll the hem and side seams the way denim was made before overlockers. The 13 oz selvedge is rinsed once to remove starch and then left alone: it will fade to your wear, not to a factory pattern.",
+      "colors": [ { "name": "Mid wash", "hex": "#5B7CA6" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7", "alt": "A blue denim button-up jacket laid flat", "color": "Mid wash" },
+        { "url": "https://images.unsplash.com/photo-1543076447-215ad9ba6923", "alt": "A blue washed denim jacket hanging on a white door", "color": "Mid wash" },
+        { "url": "https://images.unsplash.com/photo-1527016021513-b09758b777bd", "alt": "A man wearing a blue denim jacket", "color": "Mid wash" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% cotton selvedge denim", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "13", "unit": "oz" },
+        { "group": "Fit", "label": "Fit", "value": "Regular, sits at the hip", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Wash rarely, inside out, cold", "unit": null }
+      ],
+      "features": [
+        { "title": "Chain-stitched", "description": "Seams roll and twist slightly over time, which is what gives old denim its character." },
+        { "title": "Rinsed once", "description": "No artificial fading: the colour changes only where you wear it." }
+      ]
+    },
+    {
+      "slug": "everyday-heavy-tee",
+      "name": "Everyday Heavy Tee",
+      "styleCode": "VA-JR01",
+      "categorySlug": "jersey",
+      "price": 48,
+      "currency": "USD",
+      "isFeatured": false,
+      "isNew": false,
+      "summary": "A 240 g cotton tee with a collar that keeps its shape after a hundred washes.",
+      "description": "The jersey is knitted as a tube, so there are no side seams to twist. The collar is a 1×1 rib with a high Lycra-free cotton count, and the neck tape is sewn by hand at the back. We test every batch to 100 washes before we sell it.",
+      "colors": [ { "name": "White", "hex": "#F4F4F2" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL", "XXL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d", "alt": "A white crew-neck t-shirt laid flat", "color": "White" },
+        { "url": "https://images.unsplash.com/photo-1620799139652-715e4d5b232d", "alt": "A white crew-neck t-shirt on a black hanger", "color": "White" },
+        { "url": "https://images.unsplash.com/photo-1622445275463-afa2ab738c34", "alt": "A man in a white crew-neck t-shirt standing in a field", "color": "White" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% organic cotton", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "240", "unit": "g/m²" },
+        { "group": "Fit", "label": "Fit", "value": "Regular, slightly long", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Machine wash 40°C", "unit": null }
+      ],
+      "features": [
+        { "title": "Tubular knit", "description": "No side seams, so the body never twists around you." },
+        { "title": "Tested to 100 washes", "description": "Every batch is washed a hundred times in our studio before it goes on sale." }
+      ]
+    },
+    {
+      "slug": "straight-selvedge-jeans",
+      "name": "Straight Selvedge Jeans",
+      "styleCode": "VA-DN04",
+      "categorySlug": "denim",
+      "price": 165,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": false,
+      "summary": "A straight-leg jean in 14 oz selvedge, with a hem we take up for free.",
+      "description": "A mid-rise straight leg cut from 14 oz denim woven on narrow shuttle looms. The selvedge edge shows when you turn the cuff. We hem every pair to your length in the atelier, on a chain-stitch machine, at no charge.",
+      "colors": [ { "name": "Indigo", "hex": "#2E3F5C" }, { "name": "Black", "hex": "#1F1F21" } ],
+      "sizes": [ "28", "30", "32", "34", "36" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80", "alt": "A pair of blue denim jeans laid on white cloth", "color": "Indigo" },
+        { "url": "https://images.unsplash.com/photo-1624378441864-6eda7eac51cb", "alt": "Blue denim jeans folded on white cloth", "color": "Indigo" },
+        { "url": "https://images.unsplash.com/photo-1714729382668-7bc3bb261662", "alt": "Five pairs of jeans hanging on a clothes rack", "color": "Indigo" },
+        { "url": "https://images.unsplash.com/photo-1718252540617-6ecda2b56b57", "alt": "A pair of black jeans on a white background", "color": "Black" },
+        { "url": "https://images.unsplash.com/photo-1718252540511-e958742e4165", "alt": "Black jeans lying on a white floor", "color": "Black" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% cotton selvedge denim", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "14", "unit": "oz" },
+        { "group": "Fit", "label": "Rise", "value": "Mid", "unit": null },
+        { "group": "Fit", "label": "Leg", "value": "Straight", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Wash rarely, inside out, cold", "unit": null }
+      ],
+      "features": [
+        { "title": "Shuttle-loom denim", "description": "Narrow looms weave a closed selvedge edge and a denser, more uneven cloth." },
+        { "title": "Free hemming", "description": "Tell us your inside leg and we chain-stitch the hem before it ships." }
+      ]
+    },
+    {
+      "slug": "loopback-hoodie",
+      "name": "Loopback Hoodie",
+      "styleCode": "VA-JR04",
+      "categorySlug": "jersey",
+      "price": 120,
+      "currency": "USD",
+      "isFeatured": false,
+      "isNew": true,
+      "summary": "A heavyweight loopback cotton hoodie with a double-layer hood.",
+      "description": "Loopback cotton is knitted with loops left open on the inside, so it breathes better than brushed fleece and does not pill. The hood is double-layer so it holds its shape, and the rib cuffs are knitted with a thread of elastane to stop them from stretching out.",
+      "colors": [ { "name": "Black", "hex": "#1D1D1F" }, { "name": "Stone", "hex": "#B9B3A8" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL", "XXL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1746971054333-8b9610b397a5", "alt": "A mannequin wearing a black hoodie in a shop", "color": "Black" },
+        { "url": "https://images.unsplash.com/photo-1742392133846-a8b416e81661", "alt": "A hoodie hanging on a closed door", "color": null },
+        { "url": "https://images.unsplash.com/photo-1571273134620-1ef375de9b84", "alt": "A hoodie and drawstring trousers on a hanger", "color": null }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% cotton loopback", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "420", "unit": "g/m²" },
+        { "group": "Fit", "label": "Fit", "value": "Relaxed", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Machine wash 30°C, do not tumble dry", "unit": null }
+      ],
+      "features": [
+        { "title": "Loopback, not fleece", "description": "Open loops inside keep it breathable and pill-free." },
+        { "title": "Double-layer hood", "description": "The hood stands up instead of collapsing flat." }
+      ]
+    },
+    {
+      "slug": "studio-wool-blazer",
+      "name": "Studio Wool Blazer",
+      "styleCode": "VA-TL01",
+      "categorySlug": "tailoring",
+      "price": 390,
+      "currency": "USD",
+      "isFeatured": true,
+      "isNew": false,
+      "summary": "An unstructured blazer in tropical wool that packs flat and recovers overnight.",
+      "description": "Studio has no shoulder pads and only a light canvas in the chest, so it moves like a cardigan and folds into a bag. Tropical wool is woven open, which makes it cool in summer and quick to recover from creasing. Also available made-to-measure from the same pattern.",
+      "colors": [ { "name": "Charcoal", "hex": "#44464A" }, { "name": "Madder red", "hex": "#8E2B2B" } ],
+      "sizes": [ "XS", "S", "M", "L", "XL" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1613915617430-8ab0fd7c6baf", "alt": "A person in a blazer and trousers with a hand in a pocket", "color": "Charcoal" },
+        { "url": "https://images.unsplash.com/photo-1580478491436-fd6a937acc9e", "alt": "A woman in a red blazer sitting on stairs", "color": "Madder red" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% tropical wool", "unit": null },
+        { "group": "Cloth", "label": "Weight", "value": "230", "unit": "g/m" },
+        { "group": "Fit", "label": "Construction", "value": "Unstructured, half-lined", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Hang to recover, dry clean when needed", "unit": null }
+      ],
+      "features": [
+        { "title": "Unstructured", "description": "No pads, light canvas: it moves with you and folds into a bag." },
+        { "title": "Made-to-measure ready", "description": "The same pattern can be cut to your measurements." }
+      ]
+    },
+    {
+      "slug": "pleated-wool-trousers",
+      "name": "Pleated Wool Trousers",
+      "styleCode": "VA-TL04",
+      "categorySlug": "tailoring",
+      "price": 175,
+      "currency": "USD",
+      "isFeatured": false,
+      "isNew": false,
+      "summary": "Single-pleat trousers with a high rise and a wide, straight leg.",
+      "description": "A single forward pleat gives room through the hip; the leg falls straight from there. The waistband has side adjusters instead of belt loops, and there is 4 cm of extra cloth in the seat seam so they can be let out later.",
+      "colors": [ { "name": "Stone grey", "hex": "#8C8A85" }, { "name": "Black", "hex": "#1F1F21" } ],
+      "sizes": [ "28", "30", "32", "34", "36" ],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1493357335960-4583bfa6f8d9", "alt": "A person wearing grey dress trousers, holding a camera", "color": "Stone grey" },
+        { "url": "https://images.unsplash.com/photo-1584865288642-42078afe6942", "alt": "A man in a white t-shirt and black trousers on a white floor", "color": "Black" }
+      ],
+      "specifications": [
+        { "group": "Cloth", "label": "Composition", "value": "100% wool flannel", "unit": null },
+        { "group": "Fit", "label": "Rise", "value": "High", "unit": null },
+        { "group": "Fit", "label": "Leg", "value": "Wide, straight", "unit": null },
+        { "group": "Care", "label": "Care", "value": "Dry clean", "unit": null }
+      ],
+      "features": [
+        { "title": "Side adjusters", "description": "Adjust the waist by a size either way, no belt needed." },
+        { "title": "Room to let out", "description": "4 cm of spare cloth in the seat seam for later alterations." }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "slug": "made-to-measure",
+      "title": "Made-to-measure",
+      "imageUrl": "https://images.unsplash.com/photo-1787505136259-5195dfbfcd01",
+      "imageAlt": "A tailor writing measurements on a clipboard in a sewing studio",
+      "summary": "Any coat, blazer, trousers or shirt, cut from our patterns to your measurements.",
+      "description": "Book a 45-minute fitting at the atelier. We take 22 measurements, choose cloth with you from our current bolts, and cut from the same pattern as the ready-to-wear piece, adjusted to you. A baste fitting follows two weeks later, and the finished garment four weeks after that.",
+      "benefits": [ "22 measurements, kept on file for next time", "A baste fitting before the final sewing", "Ready in about six weeks" ]
+    },
+    {
+      "slug": "repairs-for-life",
+      "title": "Repairs for life",
+      "imageUrl": "https://images.unsplash.com/photo-1618866903271-595806e0679d",
+      "imageAlt": "A black jacket lying on a sewing machine",
+      "summary": "We repair anything VAELO has made, free, for as long as you own it.",
+      "description": "Bring or post the piece to the atelier. We replace linings, re-knit elbows, reset buttons, re-hem jeans and patch with cloth from the original bolt when we still have it. The repair is free; you pay postage one way.",
+      "benefits": [ "Free for every VAELO piece, forever", "Original cloth used when we have it", "Most repairs back within ten days" ]
+    },
+    {
+      "slug": "styling-appointments",
+      "title": "Wardrobe appointments",
+      "imageUrl": "https://images.unsplash.com/photo-1769107805465-bfd41863f1a0",
+      "imageAlt": "A clothing rail with neutral-coloured garments beside a cactus",
+      "summary": "An hour with one of our makers to plan fewer, better pieces.",
+      "description": "Bring photos of what you already wear. We help you find the gaps, try the pieces that fill them, and tell you honestly when the answer is a repair rather than something new.",
+      "benefits": [ "One hour, one maker, no sales targets", "Advice on what to keep and repair", "Try any size or colour we make" ]
+    },
+    {
+      "slug": "wholesale",
+      "title": "Wholesale",
+      "imageUrl": "https://images.unsplash.com/photo-1603400521630-9f2de124b33b",
+      "imageAlt": "Clothing racks with neutral-toned garments in a shop",
+      "summary": "Small runs for independent shops that share how we work.",
+      "description": "We supply a handful of independent shops each season, with minimums low enough for a small store. Stockists get the same repair promise for their customers and a line sheet six months before each season.",
+      "benefits": [ "Minimum order of 12 pieces", "Repairs for your customers included", "Line sheets six months ahead" ]
+    }
+  ],
+  "lookbooks": [
+    {
+      "slug": "north-light-aw26",
+      "title": "North Light",
+      "season": "Autumn/Winter 2026",
+      "year": 2026,
+      "location": "A northern coast (demo)",
+      "isFeatured": true,
+      "summary": "Wool, cable and camel for short days and long walks.",
+      "story": "North Light is about the hour after lunch in November, when the sun is already low. We built the season around the Halden coat and dressed it down with undyed knitwear, a soft blazer and boots that had already done a few winters.",
+      "credits": "Photography: Unsplash contributors. Styling and casting: demo.",
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1608635680046-aebf91c1a9c8", "alt": "A woman in a brown coat standing on a road in daylight" },
+        { "url": "https://images.unsplash.com/photo-1620247405612-18f042ea68cf", "alt": "A woman in a brown coat wearing black-framed glasses" },
+        { "url": "https://images.unsplash.com/photo-1739301722226-b60b59c3590a", "alt": "A woman in a grey coat and sunglasses" },
+        { "url": "https://images.unsplash.com/photo-1709786981112-7ab84ee3b55b", "alt": "A woman standing in a car park wearing a sweater and a beanie" },
+        { "url": "https://images.unsplash.com/photo-1574201635302-388dd92a4c3f", "alt": "A person wearing a grey knit sweater" },
+        { "url": "https://images.unsplash.com/photo-1588271968087-4c51abe05afc", "alt": "A woman wearing a white cable-knit sweater" }
+      ],
+      "products": [ "halden-wool-overcoat", "sorrel-merino-crewneck", "ivory-cable-jumper", "studio-wool-blazer" ]
+    },
+    {
+      "slug": "salt-and-stone-ss26",
+      "title": "Salt & Stone",
+      "season": "Spring/Summer 2026",
+      "year": 2026,
+      "location": "A whitewashed town (demo)",
+      "isFeatured": true,
+      "summary": "Linen, white cotton and the light of a whitewashed wall.",
+      "story": "Salt & Stone was shot against white walls at midday, when the shadows are shortest. Everything is linen or heavy cotton, washed until it creases well, and worn loose.",
+      "credits": "Photography: Unsplash contributors. Styling and casting: demo.",
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1776633733518-d81137214dc9", "alt": "A woman in a white shirt standing against a grey wall" },
+        { "url": "https://images.unsplash.com/photo-1776633734832-ca4ad72e203a", "alt": "A woman in a white shirt leaning against a wall" },
+        { "url": "https://images.unsplash.com/photo-1603189343302-e603f7add05a", "alt": "A person in a wide-sleeved black jacket in silhouette against a white background" },
+        { "url": "https://images.unsplash.com/photo-1574015974293-817f0ebebb74", "alt": "Black-and-white photo of a woman in a long-sleeved shirt" },
+        { "url": "https://images.unsplash.com/photo-1591357037205-166318b51afd", "alt": "A man in a white button-up shirt outdoors" }
+      ],
+      "products": [ "tide-linen-shirt", "everyday-heavy-tee", "pleated-wool-trousers" ]
+    },
+    {
+      "slug": "indigo-hours",
+      "title": "Indigo Hours",
+      "season": "Denim capsule 2026",
+      "year": 2026,
+      "location": "A city at street level (demo)",
+      "isFeatured": false,
+      "summary": "Selvedge denim, chain-stitched, worn in on the street.",
+      "story": "The denim capsule was photographed over a week of ordinary days, because denim only looks right once it has been lived in. The jacket and jeans were rinsed once and then simply worn.",
+      "credits": "Photography: Unsplash contributors. Styling and casting: demo.",
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1601036572102-f8cd483c9518", "alt": "A woman in a blue denim jacket standing near a black metal fence" },
+        { "url": "https://images.unsplash.com/photo-1614699745279-2c61bd9d46b5", "alt": "A man in a blue denim jacket and a black cap" },
+        { "url": "https://images.unsplash.com/photo-1555583743-991174c11425", "alt": "A man in a blue washed denim jacket" },
+        { "url": "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef", "alt": "Close-up of a person in a denim top" },
+        { "url": "https://images.unsplash.com/photo-1527016021513-b09758b777bd", "alt": "A man wearing a blue denim jacket" }
+      ],
+      "products": [ "field-denim-jacket", "straight-selvedge-jeans", "loopback-hoodie" ]
+    }
+  ]
+}
